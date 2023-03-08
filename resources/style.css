@@ -1,0 +1,181 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    padding: 64px 32px 71px;
+}
+.logo{
+    width: 100px;
+    margin: 32px;
+}
+.h1{
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.83px;
+    text-align: center;
+}
+.pink{
+    font-weight: 300;
+    color: #CE9898;
+}
+.black{
+    font-weight: 600;
+    color: #423A3A;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #CE9898;
+    text-align: center;
+    padding: 16px 0px 32px;
+}
+.input{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+    align-items: center;
+    
+}
+.mail{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #423A3A;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+input{
+    position: relative;
+    height: 48px;
+    width: 287px;
+    border-radius: 28px;
+    opacity: 50%;
+    border: 1px solid #CE9898;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    padding-left: 24px;
+}
+::placeholder {
+    color: #CE9898;
+    opacity: 1;
+  }
+.submit{
+    position: absolute;
+    width: 64px;
+    height: 53px;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    border: 2px solid #CE9898;
+    z-index: 2;
+}
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+.desktop-hero{
+    display:none;
+}
+#error{
+    position: absolute;
+    margin-right: 72px;
+    display: none;
+}
+#errorMsg{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #F96464;
+    padding-left: 24px;
+}
+
+@media only screen and (min-width: 375px){
+    
+    .mobile-hero{
+        display: none;
+    }
+    .desktop-hero{
+        display: flex;
+    }
+    body{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+       
+    }
+    .container{
+        background-color: rgb(248, 191, 191, 0.2);
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .logo{
+        width: 158px;
+        margin-top: 74.91px;
+        margin-left: 165px;
+        margin-bottom: 0px;
+    }
+    main{
+        display: flex;
+        width: 665px;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 136px 0px 152px 165px;
+        background: none;
+    }
+    .info{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 444px;
+    }
+    .h1{
+        font-size: 64px;
+        letter-spacing: 17.32px;
+        text-align: left;
+    }
+    .pink{
+        line-height: 64px;
+    }
+    .black{
+        line-height: 71px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+        padding: 32px 0px 40px;
+    }
+    input{
+        width: 420px;
+        height: 56px;  
+        font-size: 16px; 
+        z-index: 0;
+    }
+    .input{
+        padding-bottom: 8px;
+    }
+    .mail{
+        font-size: 16px;
+
+    }
+    .submit{
+        height: 60px;
+        width: 100px;
+    }
+    .submit:hover{
+        opacity: 50%;
+        box-shadow: 0px 15px 20px rgba(167, 99, 99, 0.5);
+    }
+    #error{
+        margin-right: 116px;
+    }
+    #errorMsg{
+        line-height: 13px;
+        padding-left: 32px;
+    }
+
+}
